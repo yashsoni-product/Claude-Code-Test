@@ -1,0 +1,16 @@
+/* Chassis — webfonts.
+   The token file declares 11 font families across brand modes. Five are
+   licensed brand faces with no public binaries (Nobel, Polestar Unica77 TT,
+   Toyota Type, Sharp Grotesk, Volvo Centum Opsz VF) — they are declared here
+   with a fallback stack and MUST be replaced with real binaries by the brand
+   teams. The six openly-available families load from Google Fonts. */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Urbanist:wght@100..900&family=Montserrat:wght@100..900&family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:wght@100..900&family=Roboto+Mono:wght@100..700&display=swap");
+
+/* --- Licensed brand faces: substitutions pending real files --------------
+   Drop the .woff2 files into assets/fonts/ and point these src: urls at them. */
+@font-face{font-family:"Nobel";src:local("Nobel"),local("Montserrat");font-weight:100 900;font-display:swap}
+@font-face{font-family:"Polestar Unica77 TT";src:local("Polestar Unica77 TT"),local("Inter");font-weight:100 900;font-display:swap}
+@font-face{font-family:"Toyota Type";src:local("Toyota Type"),local("Roboto");font-weight:100 900;font-display:swap}
+@font-face{font-family:"Sharp Grotesk";src:local("Sharp Grotesk"),local("Barlow Condensed");font-weight:100 900;font-display:swap}
+@font-face{font-family:"Volvo Centum Opsz VF";src:local("Volvo Centum Opsz VF"),local("Urbanist");font-weight:100 900;font-display:swap}

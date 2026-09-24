@@ -1,0 +1,14 @@
+/*
+ * Page chrome around the section. Chassis' base.css already sets the body
+ * font, colour and smoothing; the prototype overrode the background to the
+ * grey the variant card sits on.
+ */
+body {
+  background: #f5f5f5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
