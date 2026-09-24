@@ -1,0 +1,8 @@
+/* Chassis — minimal base. Surface + text roles and link colors only. */
+body{margin:0;background:var(--color-surface-default);color:var(--color-on-surface-default);font-family:var(--ds-font);font-size:calc(var(--typography-body-md-size) * 1px);line-height:calc(var(--typography-body-md-lineheight) * 1px);-webkit-font-smoothing:antialiased}
+a{color:var(--color-action-link-default);text-decoration:none}
+a:hover{color:var(--color-action-link-hover);text-decoration:underline}
+[data-surface="inverse"] a{color:var(--color-action-link-inverse)}
+[data-surface="inverse"] a:hover{color:var(--color-action-link-inverse-hover)}
+:focus-visible{outline:var(--ds-border-input-focus) solid var(--color-border-focus);outline-offset:2px}
+[disabled],[aria-disabled="true"]{opacity:var(--ds-state-disabled)}
